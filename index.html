@@ -162,9 +162,9 @@
         border-radius: 20%;
       }
 
-      .input {
-        /* border: 2px solid blue; */
-      }
+      /* .input {
+        border: 2px solid blue;
+      } */
 
       .input-field {
         width: 85%;
@@ -210,6 +210,38 @@
         margin: 5px;
         color: white;
         border-radius: 20px;
+      }
+
+      @media (max-width: 40em) {
+        body {
+          background-color: blue;
+          border: 2px solid white;
+          position: relative;
+        }
+        .background {
+          position: relative;
+          border: 2px solid white;
+          position: absolute;
+          height: 1000px;
+        } 
+        main {
+          position: absolute;
+          flex-direction: column;
+          border: 2px solid white;
+          width: 100%;
+          margin-top: 0px;
+          justify-content: center;
+          align-items: center;
+          margin-top: 200px;
+          gap: 100px;
+          height: 50%;
+        }
+
+        .chat-div {
+          width: 40%;
+          height: 900px;
+          
+        }
       }
 
       .attribution {
